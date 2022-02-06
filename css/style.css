@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body{
+   width: 100vw;
+   height: 100vh;
+   font-family: 'Ubuntu', sans-serif;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+#calculator{
+   width: 400px;
+   background-color: #f6f8fb;
+   border-radius: 5px;
+   padding: 8px;
+}
+
+#calculator #screen{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   padding: 10px;
+   background-color: rgb(146, 166, 182);
+   color: #fff;
+   margin-bottom: 8px;
+   border-radius: 5px;
+}
+
+#screen #hour{
+   width: 50%;
+   font-size: 14px;
+}
+
+#screen #date{
+   width: 50%;
+   text-align: right;
+   font-size: 14px;
+}
+
+#screen #result{
+   width: 100%;
+   text-align: right;
+   font-size: 50px;
+   font-weight: 400;
+   padding: 10px 0;
+}
+
+
+
+/*BUTTONS*/
+#calculator #buttons{
+
+}
+
+#calculator .button{
+   display: inline-block;
+   width: calc(25% - 3px);
+   height: 80px;
+   cursor: pointer;
+   text-align: center;
+   line-height: 80px;
+   margin: 3px 0;
+   background-color: #dde3ec;
+   border-radius: 5px;
+   color: rgb(54, 76, 95);
+   font-size: 24px;
+   transition: all 0.3s;
+}
+
+#calculator .button:hover{
+   background-color: #c1c7cf;
+}
+
+#calculator .btn-equals{
+   width: calc(50% - 3px);
+}
+
+#calculator .btn-ac, .btn-ce, .btn-equals{
+   background-color: #f78b3f !important;
+   color: #FFF !important;
+}
+
