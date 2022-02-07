@@ -101,6 +101,9 @@ class CalcController{
    }
 
    clearAll(){
+      if(this._displayCalcEl.style.fontSize < '50'){
+         this._displayCalcEl.style.fontSize = '50px';
+      }
       this._operation = [];
       this._lastNumber = '';
       this._lastOperator = '';
@@ -372,7 +375,8 @@ class CalcController{
 
       if(value.toString().length > 10){
          this._displayCalcEl.style.fontSize = '30px';
-      }else if(value.toString().length > 20){
+      }
+      if(value.toString().length > 20){
          this.setError();
          return false;
       }
