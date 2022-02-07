@@ -1,0 +1,1 @@
+window.calculatorJs = new CalcController();
